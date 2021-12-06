@@ -1,0 +1,16 @@
+{
+  "name": "football-responsive-landing_page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node:sass": "node-sass assets/sass/main.scss assets/css/main.css --watch"
+  },
+  "author": "\"Emon-Sheikh\"",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "dependencies": {},
+  "description": ""
+}

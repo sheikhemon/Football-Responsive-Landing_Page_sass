@@ -1,0 +1,450 @@
+/* ---------------------------------------------------------------------
+    Theme Name: Football - Business Consulting HTML5 landing Page
+    Author: Emon-Sheikh
+    Support: skemonalom@gmail.com
+    Description:  Football is a business multi-Purpose HTML5 Landing Page 
+    CSS INDEX
+    ===================
+    01. Theme default CSS	
+    02. Header CSS	
+    03. Hero CSS	
+    04. Player CSS	
+    05. Highlight CSS	
+    06. About CSS		
+    08. Footer CSS	
+    09. Variable Declare	
+    10. Google Fonts	
+----------------------------------------------*/
+/*----------------------------------
+    CSS Variable 
+------------------------------------*/
+/*----------------------------------
+    Google Fonts Link
+------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*----------------------------------
+        Custom Styles    
+------------------------------------*/
+::after,
+::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  width: 100%;
+  transition: all .5s linear;
+  overflow-x: hidden;
+  clear: both; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  width: 1170px;
+  margin: auto; }
+
+/*----------------------------------
+        Header Styles    
+------------------------------------*/
+.mainHeader {
+  background-color: #232946;
+  height: 100vh;
+  margin-bottom: 7rem; }
+  .mainHeader nav {
+    display: flex;
+    justify-content: space-between; }
+    .mainHeader nav ul {
+      display: flex; }
+      .mainHeader nav ul li {
+        padding-top: 5.2rem;
+        padding-right: 3.6rem; }
+        .mainHeader nav ul li a {
+          color: #fffffe;
+          font-size: 1.6rem;
+          font-family: "Poppins", sans-serif;
+          font-weight: 500;
+          transition: all .3s ease-in-out; }
+        .mainHeader nav ul li a:hover {
+          background-color: #b8c1ec;
+          padding: 1rem 2rem;
+          border-radius: .3rem;
+          color: #232946; }
+    .mainHeader nav .btn {
+      margin-top: 5.2rem;
+      padding: 1rem 2.4rem;
+      font-family: "Poppins", sans-serif;
+      background-color: #eebbc3;
+      color: #fffffe;
+      font-size: 1.6rem;
+      font-weight: 500;
+      transition: all .3s linear; }
+      .mainHeader nav .btn i {
+        margin-right: .8rem; }
+    .mainHeader nav .btn:hover {
+      background-color: #b8c1ec;
+      color: #232946; }
+  .mainHeader .heroMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .mainHeader .heroMain .hero__content {
+      visibility: hidden; }
+      .mainHeader .heroMain .hero__content h1 {
+        margin-bottom: 2.7rem;
+        font-size: 6.4rem;
+        font-weight: 700;
+        line-height: 8rem;
+        color: #b8c1ec; }
+      .mainHeader .heroMain .hero__content .btn {
+        padding: 1rem 2.6rem;
+        font-family: "Poppins", sans-serif;
+        background-color: #eebbc3;
+        color: #232946;
+        font-size: 1.6rem;
+        font-weight: 500;
+        transition: transform .3s ease-in-out; }
+      .mainHeader .heroMain .hero__content .btn:hover {
+        transform: translateX(5rem);
+        background-color: #b8c1ec; }
+    .mainHeader .heroMain .hero__thumbnail {
+      margin-top: 6.7rem; }
+      .mainHeader .heroMain .hero__thumbnail img {
+        width: 556px; }
+
+/*----------------------------------
+        Player Styles    
+------------------------------------*/
+main {
+  background-color: #fffffe;
+  height: 100vh;
+  /*----------------------------------
+            Highlights Styles    
+    ------------------------------------*/
+  /*----------------------------------
+            Gallery Styles    
+    ------------------------------------*/
+  /*-------------------------------
+        Footer Area Styles
+--------------------------------*/ }
+  main .playerBoxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem; }
+    main .playerBoxes .player_box {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      border: 0.1rem solid #fffffe;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      transition: box-shadow .3s ease-in; }
+      main .playerBoxes .player_box img {
+        width: 100%;
+        height: 256px;
+        border: 0.3rem solid #232946; }
+      main .playerBoxes .player_box h2 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        line-height: 4rem;
+        color: #121629;
+        font-family: "Poppins", sans-serif;
+        margin: 1rem 0;
+        margin-top: 1.6rem; }
+      main .playerBoxes .player_box p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.6rem;
+        font-family: "Poppins", sans-serif;
+        color: #6C6C6C;
+        margin-bottom: 3.3rem; }
+    main .playerBoxes .player_box:hover {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+  main .highlights {
+    padding-top: 16.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 6.6rem;
+    align-items: center; }
+    main .highlights .highlights__content h2 {
+      font-size: 4.8rem;
+      font-weight: 700;
+      font-family: "Poppins", sans-serif;
+      line-height: 6rem;
+      color: #121629; }
+    main .highlights .highlights__content p {
+      font-size: 1.6rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      color: #6C6C6C;
+      margin-bottom: 2.4rem;
+      margin-top: 2.4rem; }
+    main .highlights .highlights__content .btn {
+      padding: 1rem 2.6rem;
+      font-family: "Poppins", sans-serif;
+      background-color: #eebbc3;
+      color: #232946;
+      font-size: 1.6rem;
+      font-weight: 500; }
+    main .highlights .highlights__img img {
+      border: 0.3rem solid #232946;
+      border-radius: 1rem;
+      width: 100%;
+      height: 424px;
+      border-radius: 1rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+  main .gallery_main .playersGallery {
+    height: 100vh;
+    padding-bottom: 12rem; }
+    main .gallery_main .playersGallery h2 {
+      text-align: center;
+      padding-top: 12rem;
+      padding-bottom: 6rem;
+      font-size: 4.8rem; }
+    main .gallery_main .playersGallery .gallery__area-1 .img__gallery-1 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 3rem;
+      margin-bottom: 3rem; }
+      main .gallery_main .playersGallery .gallery__area-1 .img__gallery-1 img {
+        border: 0.5rem solid #b8c1ec;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        width: 100%;
+        height: 250px; }
+    main .gallery_main .playersGallery .img__gallery-2 {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 3rem; }
+      main .gallery_main .playersGallery .img__gallery-2 img {
+        margin-bottom: 12rem;
+        border: 0.5rem solid #b8c1ec;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        height: 150px;
+        width: 100%; }
+
+/*-------------------------------
+        Footer Area Styles
+--------------------------------*/
+/*-------------------------------
+        Media Query Styles
+--------------------------------*/
+@media only screen and (max-width: 667px) {
+  /*----------------------------------
+        Header Styles    
+    ------------------------------------*/
+  body {
+    overflow-x: hidden; }
+  .container {
+    width: 100%; }
+  .mainHeader {
+    background-color: #232946;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem; }
+    .mainHeader nav {
+      display: none; }
+      .mainHeader nav ul {
+        display: flex; }
+        .mainHeader nav ul li {
+          padding-top: 5.2rem;
+          padding-right: 3.6rem; }
+    .mainHeader .heroMain {
+      clear: both;
+      overflow-x: hidden;
+      flex-direction: column; }
+      .mainHeader .heroMain .hero__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .mainHeader .heroMain .hero__content h1 {
+          text-align: center;
+          margin-bottom: 2.7rem;
+          font-size: 3.5rem;
+          line-height: 4rem;
+          padding: 0 3; }
+      .mainHeader .heroMain .hero__thumbnail {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem; }
+        .mainHeader .heroMain .hero__thumbnail img {
+          width: 80%; }
+  /*----------------------------------
+        Player Styles    
+------------------------------------*/
+  main {
+    background-color: #fffffe;
+    height: 100vh;
+    /*----------------------------------
+            Highlights Styles    
+    ------------------------------------*/
+    /*----------------------------------
+            Gallery Styles    
+    ------------------------------------*/ }
+    main .playerBoxes {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 3rem; }
+    main .highlights {
+      padding-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 6.6rem;
+      align-items: center; }
+      main .highlights .highlights__content {
+        text-align: left;
+        padding: 1.5rem; }
+        main .highlights .highlights__content h2 {
+          font-size: 3.2rem;
+          font-weight: 700;
+          font-family: "Poppins", sans-serif;
+          line-height: 5rem;
+          color: #121629; }
+        main .highlights .highlights__content p {
+          margin-bottom: 5rem; }
+      main .highlights .highlights__img {
+        padding: 1.5rem; }
+        main .highlights .highlights__img img {
+          height: 250px; }
+    main .gallery_main .playersGallery {
+      height: 100vh;
+      padding-bottom: 12rem; }
+      main .gallery_main .playersGallery h2 {
+        text-align: center;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        font-size: 4.8rem; }
+      main .gallery_main .playersGallery .gallery__area-1 .img__gallery-1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 3rem;
+        margin-bottom: 3rem; }
+        main .gallery_main .playersGallery .gallery__area-1 .img__gallery-1 img {
+          border: 0.5rem solid #b8c1ec;
+          border-radius: 1rem;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+          width: 100%;
+          height: 337px; }
+      main .gallery_main .playersGallery .img__gallery-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr); }
+        main .gallery_main .playersGallery .img__gallery-2 img {
+          margin-bottom: 2rem; } }
+
+@media only screen and (min-width: 667px) and (max-width: 992px) {
+  /*----------------------------------
+        Header Styles    
+    ------------------------------------*/
+  body {
+    overflow-x: hidden; }
+  .container {
+    width: 100%;
+    overflow-x: hidden; }
+  .mainHeader nav {
+    display: none; }
+    .mainHeader nav ul {
+      display: flex; }
+      .mainHeader nav ul li {
+        padding-top: 5.2rem;
+        padding-right: 3.6rem; }
+  .mainHeader .heroMain {
+    clear: both;
+    overflow-x: hidden;
+    flex-direction: column; }
+    .mainHeader .heroMain .hero__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .mainHeader .heroMain .hero__content h1 {
+        text-align: center;
+        margin-bottom: 3rem;
+        font-size: 4rem;
+        line-height: 4rem;
+        padding: 0 3; }
+    .mainHeader .heroMain .hero__thumbnail {
+      display: flex;
+      justify-content: center;
+      margin-top: 8rem; }
+      .mainHeader .heroMain .hero__thumbnail img {
+        width: 80%; }
+  /*----------------------------------
+        Player Styles    
+------------------------------------*/
+  main {
+    overflow-x: hidden;
+    background-color: #fffffe;
+    height: 100vh;
+    /*----------------------------------
+            Highlights Styles    
+    ------------------------------------*/
+    /*----------------------------------
+            Gallery Styles    
+    ------------------------------------*/ }
+    main .playerBoxes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3rem; }
+    main .highlights {
+      padding-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 6.6rem;
+      align-items: center; }
+      main .highlights .highlights__content {
+        text-align: left;
+        padding: 1.5rem; }
+        main .highlights .highlights__content h2 {
+          text-align: center;
+          font-size: 4rem;
+          font-weight: 700;
+          font-family: "Poppins", sans-serif;
+          line-height: 5rem;
+          color: #121629; }
+        main .highlights .highlights__content p {
+          margin-bottom: 5rem;
+          font-size: 2rem;
+          text-align: center; }
+        main .highlights .highlights__content .btn {
+          margin-left: 30rem;
+          font-size: 2rem; }
+      main .highlights .highlights__img {
+        padding: 1.5rem; }
+        main .highlights .highlights__img img {
+          height: 450px;
+          width: 100%; }
+    main .gallery_main .playersGallery {
+      height: 100vh;
+      padding-bottom: 12rem; }
+      main .gallery_main .playersGallery h2 {
+        text-align: center;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        font-size: 4.8rem; }
+      main .gallery_main .playersGallery .gallery__area-1 .img__gallery-1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+        margin-bottom: 3rem; }
+        main .gallery_main .playersGallery .gallery__area-1 .img__gallery-1 img {
+          border: 0.5rem solid #b8c1ec;
+          border-radius: 1rem;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+          width: 100%;
+          height: 337px; }
+      main .gallery_main .playersGallery .img__gallery-2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); }
+        main .gallery_main .playersGallery .img__gallery-2 img {
+          margin-bottom: 2rem;
+          width: 250px; } }

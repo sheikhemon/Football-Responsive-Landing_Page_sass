@@ -1,0 +1,602 @@
+ /* ---------------------------------------------------------------------
+    Theme Name: Football - Business Consulting HTML5 landing Page
+    Author: Emon-Sheikh
+    Support: skemonalom@gmail.com
+    Description:  Football is a business multi-Purpose HTML5 Landing Page 
+    CSS INDEX
+    ===================
+    01. Theme default CSS	
+    02. Header CSS	
+    03. Hero CSS	
+    04. Player CSS	
+    05. Highlight CSS	
+    06. About CSS		
+    08. Footer CSS	
+    09. Variable Declare	
+    10. Google Fonts	
+----------------------------------------------*/
+
+/*----------------------------------
+    CSS Variable 
+------------------------------------*/
+$bg-main: #232946;
+$bg-secondary: #fffffe;
+$main-headline: #b8c1ec;
+$secondary-text: #121629;
+$text-color : #6C6C6C;
+$btn-main: #eebbc3;
+$btn-text: #232946;
+$font-size16: 1.6rem;
+$font-size18: 1.8rem;
+$font-size28: 2.8rem;
+$font-size48: 4.8rem;
+$font-size64: 6.4rem;
+$font-weight700: 700;
+$font-weight600: 600;
+$font-weight500: 500;
+$font-weight400: 400;
+$padding-header-navT: 5.2rem;
+$margin-header-navT: 5.2rem;
+$padding-header-navTA: 2.4rem;
+$padding-header-navTB: 1rem;
+$padding-header-navR: 3.6rem;
+$padding-player-box: 1.5rem;
+$margin-top1: 2rem;
+$margin-top2: 2.4rem;
+$margin-bottom2-1: 2.4rem;
+$margin-top3: 2.7rem;
+$margin-bottom-1: 2.7rem;
+$margin-bottom-2: 7rem;
+$margin-bottom-3: 1rem;
+$padding-top-highlights: 16.5rem;
+$margin-right: 3rem;
+$margin-top4: .8rem;
+$width-main: 100vw;
+$width-secondary: 50vh;
+$height-main: 100vh;
+$height-secondary: 50vh;
+$box-shadow-main : rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$font-familyPoppins: 'Poppins', sans-serif;
+
+/*----------------------------------
+    Google Fonts Link
+------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*----------------------------------
+        Custom Styles    
+------------------------------------*/
+::after,
+::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    transition: all .5s linear;
+    overflow-x: hidden;
+    clear: both;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+/*----------------------------------
+        Header Styles    
+------------------------------------*/
+.mainHeader{
+    background-color: $bg-main;
+    height: $height-main;
+    margin-bottom: $margin-bottom-2;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            li{
+                padding-top: $padding-header-navT;
+                padding-right: $padding-header-navR;
+                a{
+                    color: $bg-secondary;
+                    font-size: $font-size16;
+                    font-family: $font-familyPoppins;
+                    font-weight: $font-weight500;
+                    transition: all .3s ease-in-out;
+                }
+                a:hover{
+                    background-color: $main-headline;
+                    padding: 1rem 2rem;
+                    border-radius: .3rem;
+                    color: $btn-text;
+                }
+            }
+        }
+        .btn{
+            margin-top: $margin-header-navT;
+            padding: $padding-header-navTB $padding-header-navTA ;
+            font-family: $font-familyPoppins;
+            background-color: $btn-main;
+            color: $bg-secondary;
+            font-size: $font-size16;
+            font-weight: $font-weight500;
+            transition: all .3s linear;
+            i{
+                margin-right: .8rem;
+            }
+        }
+        .btn:hover{
+            background-color: $main-headline;
+            color: $bg-main;
+        }
+    }
+    .heroMain{
+       display: flex;
+       justify-content: space-between;
+        align-items: center;
+        .hero__content{
+            visibility: hidden;
+            h1{
+                margin-bottom: $margin-bottom-1;
+                font-size: $font-size64;
+                font-weight: $font-weight700;
+                line-height: 8rem;
+                color: $main-headline;
+
+            }
+            .btn{
+                padding:  1rem 2.6rem;
+                font-family: $font-familyPoppins;
+                background-color: $btn-main;
+                color: $btn-text;
+                font-size: $font-size16;
+                font-weight: $font-weight500;
+                transition: transform .3s ease-in-out;
+            }
+            .btn:hover{
+                transform: translateX(5rem);
+                background-color: $main-headline;
+            }
+        }
+        .hero__thumbnail{
+            margin-top: 6.7rem;
+            img{
+                width: 556px;
+            }
+        }
+    }
+}
+
+/*----------------------------------
+        Player Styles    
+------------------------------------*/
+main{
+    background-color: $bg-secondary;
+    height: $height-main;
+    .playerBoxes{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
+        .player_box{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            border: .1rem solid $bg-secondary;
+            padding: $padding-player-box;
+            border-radius: 1rem;
+            transition: box-shadow .3s ease-in;
+            img{
+                width: 100%;
+                height: 256px;
+                border: .3rem solid $bg-main;
+            }
+            h2{
+                font-size: $font-size28;
+                font-weight: $font-weight700;
+                line-height: 4rem;
+                color: $secondary-text;
+                font-family: $font-familyPoppins;
+                margin: $margin-bottom-3 0;
+                margin-top: 1.6rem;
+            }
+            p{
+                font-size: $font-size16;
+                font-weight: $font-weight400;
+                line-height: 2.6rem;
+                font-family: $font-familyPoppins;
+                color: $text-color;
+                margin-bottom: 3.3rem;
+            }
+        }
+        .player_box:hover{
+            box-shadow: $box-shadow-main;
+        }
+    }
+    /*----------------------------------
+            Highlights Styles    
+    ------------------------------------*/
+    .highlights{
+        padding-top: $padding-top-highlights;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 6.6rem;
+        align-items: center;
+        .highlights__content{
+            h2{
+                font-size: $font-size48;
+                font-weight: $font-weight700;
+                font-family: $font-familyPoppins;
+                line-height: 6rem;
+                color: $secondary-text;
+            }
+            p{
+                font-size: $font-size16;
+                font-family: $font-familyPoppins;
+                font-weight: $font-weight400;
+                color: $text-color;
+                margin-bottom: $margin-bottom2-1;
+                margin-top: $margin-top2;
+            }
+            .btn{
+                padding:  1rem 2.6rem;
+                font-family: $font-familyPoppins;
+                background-color: $btn-main;
+                color: $btn-text;
+                font-size: $font-size16;
+                font-weight: $font-weight500;
+            }
+        }
+        .highlights__img{
+            img{
+                border: .3rem solid $bg-main;
+                border-radius: 1rem;
+                width: 100%;
+                height: 424px;
+                border-radius: 1rem;
+                box-shadow: $box-shadow-main;
+            }
+        }
+    }
+    /*----------------------------------
+            Gallery Styles    
+    ------------------------------------*/
+    .gallery_main{
+        .playersGallery{
+            height: 100vh;
+            padding-bottom: 12rem;
+            h2{
+                text-align: center;
+                padding-top: 12rem;
+                padding-bottom: 6rem;
+                font-size: 4.8rem;
+            }
+            .gallery__area-1{
+                .img__gallery-1{
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-gap: 3rem;
+                    margin-bottom: 3rem;
+                    img{
+                        border: .5rem solid $main-headline;
+                        border-radius: 1rem;
+                        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                        width : 100%;
+                        height: 250px;
+                    }
+                }
+            }
+            .img__gallery-2{
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-gap: 3rem;
+                img{
+                    margin-bottom: 12rem;
+                    border: .5rem solid $main-headline;
+                    border-radius: 1rem;
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                    height: 150px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    /*-------------------------------
+        Footer Area Styles
+--------------------------------*/   
+}
+
+/*-------------------------------
+        Footer Area Styles
+--------------------------------*/
+/*-------------------------------
+        Media Query Styles
+--------------------------------*/
+@media only screen and (max-width: 667px){
+    /*----------------------------------
+        Header Styles    
+    ------------------------------------*/
+        body{
+            overflow-x: hidden;
+        }
+        .container{
+            width: 100%;
+        }
+    .mainHeader{
+        background-color: $bg-main;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        nav{
+            display: none;
+            ul{
+                display: flex;
+                li{
+                    padding-top: $padding-header-navT;
+                    padding-right: $padding-header-navR;
+                }
+            }
+
+        }
+        .heroMain{
+            clear: both;
+            overflow-x: hidden;
+            flex-direction: column;
+            .hero__content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                // padding: 2rem 0;
+                h1{
+                    text-align: center;
+                    margin-bottom: $margin-bottom-1;
+                    font-size : 3.5rem;
+                    line-height: 4rem;
+                    padding: 0 3;
+                }
+            }
+            .hero__thumbnail{
+                display: flex;
+                justify-content: center;
+                margin-top: 3rem;
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+/*----------------------------------
+        Player Styles    
+------------------------------------*/
+main{
+    background-color: $bg-secondary;
+    height: $height-main;
+    .playerBoxes{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 3rem;
+    }
+    /*----------------------------------
+            Highlights Styles    
+    ------------------------------------*/
+    .highlights{
+        padding-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 6.6rem;
+        align-items: center;
+        .highlights__content{
+            text-align: left;
+            padding: 1.5rem;
+            h2{
+                font-size: 3.2rem;
+                font-weight: $font-weight700;
+                font-family: $font-familyPoppins;
+                line-height: 5rem;
+                color: $secondary-text;
+            }
+            p{
+                margin-bottom: 5rem;
+            }
+        }
+        .highlights__img{
+            padding: 1.5rem;
+            img{
+                height: 250px;
+            }
+        }
+    }
+    /*----------------------------------
+            Gallery Styles    
+    ------------------------------------*/
+        .gallery_main{
+            .playersGallery{
+                height: 100vh;
+                padding-bottom: 12rem;
+                h2{
+                    text-align: center;
+                    padding-top: 6rem;
+                    padding-bottom: 6rem;
+                    font-size: 4.8rem;
+                }
+                .gallery__area-1{
+                    .img__gallery-1{
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        grid-gap: 3rem;
+                        margin-bottom: 3rem;
+                        img{
+                            border: .5rem solid $main-headline;
+                            border-radius: 1rem;
+                            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                            width : 100%;
+                            height: 337px;
+                        }
+                    }
+                }
+                .img__gallery-2{
+                    display: grid;
+                    grid-template-columns: repeat(2, 2fr);
+                    img{
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 667px) and (max-width: 992px){
+    /*----------------------------------
+        Header Styles    
+    ------------------------------------*/
+        body{
+            overflow-x: hidden;
+        }
+        .container{
+            width: 100%;
+            overflow-x: hidden;
+        }
+    .mainHeader{
+        nav{
+            display: none;
+            ul{
+                display: flex;
+                li{
+                    padding-top: $padding-header-navT;
+                    padding-right: $padding-header-navR;
+                }
+            }
+
+        }
+        .heroMain{
+            clear: both;
+            overflow-x: hidden;
+            flex-direction: column;
+            .hero__content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h1{
+                    text-align: center;
+                    margin-bottom: 3rem;
+                    font-size : 4rem;
+                    line-height: 4rem;
+                    padding: 0 3;
+                }
+            }
+            .hero__thumbnail{
+                display: flex;
+                justify-content: center;
+                margin-top: 8rem;
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+/*----------------------------------
+        Player Styles    
+------------------------------------*/
+main{
+    overflow-x: hidden;
+    background-color: $bg-secondary;
+    height: $height-main;
+    .playerBoxes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+    }
+    /*----------------------------------
+            Highlights Styles    
+    ------------------------------------*/
+    .highlights{
+        padding-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 6.6rem;
+        align-items: center;
+        .highlights__content{
+            text-align: left;
+            padding: 1.5rem;
+            h2{
+                text-align: center;
+                font-size: 4rem;
+                font-weight: $font-weight700;
+                font-family: $font-familyPoppins;
+                line-height: 5rem;
+                color: $secondary-text;
+            }
+            p{
+                margin-bottom: 5rem;
+                font-size: 2rem;
+                text-align: center;
+            }
+            .btn{
+                margin-left: 30rem;
+                font-size: 2rem;
+            }
+        }
+        .highlights__img{
+            padding: 1.5rem;
+            img{
+                height: 450px;
+                width: 100%;
+            }
+        }
+    }
+    /*----------------------------------
+            Gallery Styles    
+    ------------------------------------*/
+        .gallery_main{
+            .playersGallery{
+                height: 100vh;
+                padding-bottom: 12rem;
+                h2{
+                    text-align: center;
+                    padding-top: 6rem;
+                    padding-bottom: 6rem;
+                    font-size: 4.8rem;
+                }
+                .gallery__area-1{
+                    .img__gallery-1{
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-gap: 3rem;
+                        margin-bottom: 3rem;
+                        img{
+                            border: .5rem solid $main-headline;
+                            border-radius: 1rem;
+                            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                            width : 100%;
+                            height: 337px;
+                        }
+                    }
+                }
+                .img__gallery-2{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    img{
+                        margin-bottom: 2rem;
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
